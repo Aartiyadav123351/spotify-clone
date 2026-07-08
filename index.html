@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - your favourite music is here</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="spotify">spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="left">
+            <h1>Best of NCS - No Copyright Sounds</h1>
+
+            <div class="songlist">
+
+                <div class="songItem">
+                    <img src="cover.jpg" alt="cover">
+                    <span class="songName">Cheery Cheery lady </span>
+                    <span class="songlistplay">
+                        <span class="duration">03:34</span>
+                        <i class="fa-solid fa-circle-play"></i>
+                    </span>
+                </div>
+
+                <div class="songItem">
+                    <img src="cover2.jpg" alt="cover">
+                    <span class="songName">Love Me Like You Do</span>
+                    <span class="songlistplay">
+                        <span class="duration">05:34</span>
+                        <i class="fa-solid fa-circle-play"></i>
+                    </span>
+                </div>
+
+                <div class="songItem">
+                    <img src="cover3.jpg" alt="cover">
+                    <span class="songName">Ajab Si </span>
+                    <span class="songlistplay">
+                        <span class="duration">05:34</span>
+                        <i class="fa-solid fa-circle-play"></i>
+                    </span>
+                </div>
+
+                <!-- Repeat this .songItem block for each additional song -->
+
+            </div>
+        </div>
+
+        <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+        <audio id="audioplayer"></audio>
+        <input type="range" name="range" id="MyProgressBar" min="0" max="100">
+        <div class="player-info">
+            <span id="currentSongName">Let me love you - Justin Bieber</span>
+            <div class="icons">
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-solid fa-circle-play" id="playBtn"></i>
+                <i class="fa-solid fa-forward-step"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
